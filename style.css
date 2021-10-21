@@ -7,8 +7,10 @@ body {
 
 }
 p{
+    font-size: 15px;
     font-weight: 400;
     line-height: 25px;
+    width: 60%;
     color:hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
 height: max-content;
@@ -16,6 +18,7 @@ display: flex;
 margin-top: 0;
 justify-self: flex-end;
 gap:0;
+padding-bottom: 50px;
 }
 
 img {
@@ -25,7 +28,7 @@ img {
 
 h1,h2{
     margin-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -49,7 +52,7 @@ div{
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
 
 
@@ -83,11 +86,11 @@ margin-top: -90px;
 button{ 
     font-size: 18px; 
     background-color: hsl(0, 0%, 95%);
-    border-radius: 40%;
+    border-radius: 50px;
     border: white solid;
     font-family: 'Lexend Deca', sans-serif;
-    width: 14rem;
-    height: 4.5rem;
+    width: 13rem;
+    height: 4rem;
 }
 
 .cl1 {
@@ -114,4 +117,37 @@ button{
 .cl3:hover{
     background-color :hsl(179, 100%, 13%);
     color: white;
+}
+
+@media (max-width:1440px )
+{
+    .container{
+   
+       height:1152px;;
+       width: 90%;
+       display: flex;
+       flex-direction: column;
+    }
+.item1,.item2,.item3{
+    width: 100%;
+    border-radius: 0;
+    height: 1fr;
+}
+ 
+.item1{
+    border-radius:10px 10px 0px 0px 
+}
+.item3 {
+    border-radius: 0 0 10px 10px;
+}
+button {
+    width: 50%;
+}
+img{
+    margin-top: 10%;
+}
+
+p {
+    padding: 0;
+}
 }
